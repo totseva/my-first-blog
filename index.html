@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My first blog</title>
+    <style>
+        header{
+            background: url("background.jpg");
+            text-align: center;
+            background-size: cover;
+            font-size: 17px;
+            font-family: Helvetica, sans-serif;
+        }
+        img {
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 15px;
+        }
+        a {
+            color: #FAF3E0;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 60px;
+            color: #D4A017;
+        }
+
+        .highlight {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 0 10px;
+        }
+
+        ul {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        li {
+            display: inline;
+            padding: 00px 10px 0px 10px;
+            cursor: pointer;
+        }
+
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+
+        button{
+            border: none;
+            background: lightskyblue;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            text-align: left;
+            margin: 0px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: whitesmoke;
+            color: lightskyblue;
+            border: 2px solid lightskyblue;
+        }
+
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+            }
+            li {
+                display: block;
+                padding: 5px;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="picture.jpg" alt="A girl smiling" width="200" height="200">
+    <h1><span class="highlight">Marina's Blog</span></h1>
+
+    <ul>
+        <li> <a href="#">About me</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Contact me</a></li>
+    </ul>
+</header>
+
+<article>
+    <h3>Quote of the day:</h3>
+    <p><q><i>Don't wait for someone to make you smile. Be the one to bring smiles!</i></q> <br>
+        <hr></p>
+
+    <h3>Description:</h3>
+    <p>Hi! I’m a Medium writer, UX/UI designer, frontend developer, and Japanese philology graduate 🌸<br>
+        I want to connect people from different parts of the world by building a fun, welcoming community!</p>
+
+    <p>✨ On this blog, you’ll find: <br>
+        - 🎤 Japanese guides and insights<br>
+        - 💻 Relaxing programming & Figma design tips<br>
+        - 🏎️ Interesting articles about cars and the racing world!<br>
+    </p>
+</article>
+<button>Follow Marina</button>
+
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+<script>
+    $("button").on("click", function() {
+        alert("You followed Marina! Thanks!")
+    })
+</script>
+</body>
+</html>
